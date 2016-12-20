@@ -110,7 +110,7 @@ h1{
 
 /*__________________________Page4______________________*/
 
-#compte h3{
+h3{
   text-align: center;
   color: white;
 }
@@ -131,5 +131,18 @@ h1{
 #send{
   margin-top: 50px;
   width: 50%;
+}
+/*________________________Page5__________________________*/
 
+#merci{
+  padding-top: 50px;
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+}
+#liens{
+  margin-top: 30px;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
 }
