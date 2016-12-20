@@ -107,3 +107,29 @@ h1{
   margin-left: -20px;
   color: white;
 }
+
+/*__________________________Page4______________________*/
+
+#compte h3{
+  text-align: center;
+  color: white;
+}
+#formulaire{
+  margin-top: 10px;
+}
+.input-group{
+  margin-top: 15px;
+}
+.form-control{
+  border-radius: 0%;
+}
+.input-group-addon{
+  background-color: lightgrey;
+  border-radius: 0%;
+  color : #0D47A1;
+}
+#send{
+  margin-top: 50px;
+  width: 50%;
+
+}
