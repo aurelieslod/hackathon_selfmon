@@ -47,7 +47,9 @@ h1{
    color: white;
  }
 /*______________Page2____________________*/
-
+.display{
+  display: none;
+}
 #vue{
   height: 300px;
   width: 100%;
@@ -100,16 +102,31 @@ h1{
 }
 #question{
   font-size: 1.5em;
-
+}
+#helper{
+  color: white;
 }
 .fa-question{
   margin-top: 35px;
-  margin-left: -20px;
   color: white;
 }
+#reseau .fa-facebook-official, #reseau .fa-twitter{
+  margin-top: 65px;
+  margin-left: -85px;
+  color: white;
+  margin-bottom: 15px;
+}
+#retourThree{
+  margin-top: 0;
+}
+#fbTwit{
+  display:none;
+  position: relative;
+  top: 20px;
+  font-size: 1.5em;
+}
 
-/*__________________________Page4______________________*/
-
+/*page four*/
 h3{
   text-align: center;
   color: white;
@@ -128,11 +145,9 @@ h3{
   border-radius: 0%;
   color : #0D47A1;
 }
-#send{
-  margin-top: 50px;
-  width: 50%;
-}
-/*________________________Page5__________________________*/
+
+
+/*page five*/
 
 #merci{
   padding-top: 50px;

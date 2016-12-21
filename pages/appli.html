@@ -1,28 +1,158 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- Bootstrap css  -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<!-- Custom css -->
-		<link rel="stylesheet" href="../css/appli.css" media="screen">
-		<title>SelfMon</title>
-	</head>
-	<body>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap css  -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Custom css -->
+	<link rel="stylesheet" href="../css/appli.css" media="screen">
+	<title>SelfMon</title>
+</head>
+
+<body>
 
 
-<div class="container-fluid" id="pageStart">
+	<!-- F I R S T       P A R T -->
+
+	<div class="container-fluid" id="pageStart">
 		<div></div>
-			<h1>SelfMon</h1>
-			<p id="accroche">Etes-vous prêts à prendre de la hauteur ?</p>
-			<a href="appli2.html"><button type="button" class="btn col-xs-offset-4 col-xs-4" id="btnStart">Cliquez ici</button></a>
-</div>
-		<!-- jQuery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<!-- Bootstrap JS -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<!-- Custom JS -->
-		<script src="../js/appli.js" charset="utf-8"></script>
-	</body>
+		<h1>SelfMon</h1>
+		<p id="accroche">Etes-vous prêts à prendre de la hauteur ?</p>
+		<button type="button" class="btn col-xs-offset-4 col-xs-4" id="btnStart">Cliquez ici</button>
+	</div>
+
+
+	<!-- S E C O N D    P A R T -->
+
+
+	<div class="container-fluid display" id="pagePhoto">
+		<h1 id="titre">SelfMon</h1>
+		<div class="col-xs-12" id="vue">
+			<i class="fa fa-chevron-up" aria-hidden="true"></i>
+			<i class="fa fa-chevron-left" aria-hidden="true"></i>
+			<i class="fa fa-chevron-right" aria-hidden="true"></i>
+			<i class="fa fa-chevron-down" aria-hidden="true"></i>
+		</div>
+
+
+		<button type="button" class="btn col-xs-offset-4 col-xs-4" id="btnPhoto"><i class="fa fa-camera" aria-hidden="true"></i> Photo</button>
+	</div>
+
+
+
+	<!-- T H I R D     P A R T -->
+
+
+
+	<div class="container-fluid display" id="pageApercu">
+		<h1 id="titre">SelfMon</h1>
+		<div class="col-xs-12" id="apercu"></div>
+		<div class="container-fluid" id="mainContain">
+			<div id="reseau">
+				<div class="row">
+					<button type="button" class="btn col-xs-offset-4 col-xs-4" id="share"><i class="fa fa-share" aria-hidden="true"></i> Partager</button>
+					<div class="row" id="fbTwit">
+						<div class="col-xs-1 center-block">
+							<a href="#"><i class="fa fa-facebook-official end" aria-hidden="true"></i></a>
+						</div>
+						<div class="col-xs-1 center-block">
+							<a href="#"><i class="fa fa-twitter end" aria-hidden="true"></i></a>
+						</div>
+						<button type="button" class="btn center-block" id="retour">Retour</button>
+					</div>
+				</div>
+			</div>
+
+			<div id="log">
+				<div class="col-xs-offset-4 col-xs-4">
+					<button type="button" class="btn" id="login">Login</button>
+				</div>
+			</div>
+			<div id="help">
+				<div class="col-xs-1" id="question">
+					<a href="#"><i class="fa fa-question" aria-hidden="true"></i></a>
+				</div>
+				<div id="helper" class="col-xs-11 display">
+					<p>Pour recevoir vos photos via votre adresse mail, veuillez vous identifier</p>
+					<button type="button" class="btn" id="retourThree">Retour</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- FOURTH     PART-->
+
+	<div class="container-fluid display" id="pageCompte">
+		<h1 id="titre">SelfMon</h1>
+		<div class="row" id="compte">
+			<h3>Créer un compte</h3>
+			<div class="col-xs-12" id="formulaire">
+				<form>
+
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+						<input id="nom" type="text" class="form-control" name="nom" placeholder="Votre Nom">
+					</div>
+
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+						<input id="password" type="password" class="form-control" name="password" placeholder="Mot de passe">
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+						<input id="email" type="email" class="form-control" name="email" placeholder="Mail">
+					</div>
+
+
+					<input type="submit" class="end form-control btn center-block" name="send" value="Envoyer">
+
+				</form>
+				<button type="button" class="btn center-block" id="retourFour">Retour</button>
+			</div>
+		</div>
+	</div>
+
+
+	<!--Five Part -->
+
+	<div class="container-fluid display" id="pageFin">
+		<h1 id="titre">SelfMon</h1>
+		<div class="row">
+			<div class="col-xs-12">
+				<h3>Envie de vous élever une dernière fois ?</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<a href=""><button type="button" class="btn center-block" id="login">Recommencer</button></a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12" id="merci">
+				<p>SelfMon vous remercie de votre visite</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 text-center" id="liens">
+				<i class="fa fa-facebook-official" aria-hidden="true"></i>
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+				<i class="fa fa-instagram" aria-hidden="true"></i>
+
+			</div>
+		</div>
+	</div>
+	<!-- E N D I N G -->
+
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Custom JS -->
+	<script src="../js/appli.js" charset="utf-8"></script>
+	<script src="https://use.fontawesome.com/6b5cb53962.js"></script>
+</body>
+
 </html>
